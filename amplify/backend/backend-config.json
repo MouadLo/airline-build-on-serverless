@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"airlineserverlerssauth": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

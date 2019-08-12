@@ -1,0 +1,70 @@
+mutation filght1 {
+  createFlight(input: {
+    departureDate: "2019-01-16T08:00+0000",
+    departureAirportCode: "LGW",
+    departureAirportName: "London Gatwick",
+    departureLocale: "London",
+    departureCity: "Europe/London",
+    arrivalDate: "2019-01-16T10:15+0000",
+    arrivalAirportCode: "MAD",
+    arrivalAirportName: "Madrid Barajas",
+    arrivalCity: "Madrid",
+    arrivalLocale: "Europe/Madrid",
+    ticketPrice: 400,
+    ticketCurrency: "EUR",
+    flightNumber: 1812
+  }) {
+    id
+  }
+}
+
+mutation filght3 {
+  createFlight(input: {
+    departureDate: "2019-08-12T08:00+0000",
+    departureAirportCode: "LGW",
+    departureAirportName: "London Gatwick",
+    departureLocale: "London",
+    departureCity: "Europe/London",
+    arrivalDate: "2019-01-16T10:15+0000",
+    arrivalAirportCode: "MAD",
+    arrivalAirportName: "Madrid Barajas",
+    arrivalCity: "Madrid",
+    arrivalLocale: "Europe/Madrid",
+    ticketPrice: 400,
+    ticketCurrency: "EUR",
+    flightNumber: 1819
+  }) {
+    id
+  }
+}
+mutation filght2 {
+  createFlight(input: {
+    departureDate: "2019-01-16T08:00+0000",
+    departureAirportCode: "LGW",
+    departureAirportName: "London Gatwick",
+    departureLocale: "London",
+    departureCity: "Europe/London",
+    arrivalDate: "2019-01-16T10:15+0000",
+    arrivalAirportCode: "MAD",
+    arrivalAirportName: "Madrid Barajas",
+    arrivalCity: "Madrid",
+    arrivalLocale: "Europe/Madrid",
+    ticketPrice: 400,
+    ticketCurrency: "EUR",
+    flightNumber: 1815
+  }) {
+    id
+  }
+}
+
+query {
+  getFlight(id: "28b54da4-dbab-4835-b8e0-6a0f9693b584"){
+    id
+    arrivalDate
+    arrivalCity
+    arrivalLocale
+    arrivalAirportCode
+    departureAirportCode
+    arrivalDate
+  }
+}

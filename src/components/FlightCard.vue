@@ -32,12 +32,11 @@
               </div>
             </div>
             <div
+            
               class="row text-primary flight__timing"
               v-if="
                 !booking &&
-                  details.departureTime &&
-                  details.flightDuration &&
-                  details.arrivalTime
+                  details.flightDuration 
               "
             >
               <q-card-separator class="flight__separator" />
@@ -144,34 +143,26 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~variables'
-
 .flight
   margin 1.3rem 1rem
-
 .flight__card
   min-width 18rem
   max-width 32rem
   margin auto
   width 100%
   border-radius 0.93rem
-
 .flight__icon
   font-size $item-icon-size
-
 .flight__arrival
   margin-left 2.3rem
-
 .flight__separator
   background-color $secondary
   margin 0.4rem
   width 100%
-
 .flight__icon-caption
   font-size 1.5rem
-
 .flight__price
   font-size 1.3rem
-
 .q-list
   border none
 </style>

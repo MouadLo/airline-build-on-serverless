@@ -36,7 +36,9 @@
               class="row text-primary flight__timing"
               v-if="
                 !booking &&
-                  details.flightDuration 
+                  details.departureTime &&
+                  details.flightDuration &&
+                  details.arrivalTime
               "
             >
               <q-card-separator class="flight__separator" />
